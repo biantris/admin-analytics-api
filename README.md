@@ -26,11 +26,11 @@ Functional Backend implementation of REST api with NodeJS(Express) MongoDB w/ Pr
 - [x] userModel
 
 #### APIs
-- [x] userGet
-- [x] userGetAll
+- [ ] userGet
+- [ ] userGetAll
 - [x] userPost
-- [x] userUpdate
-- [x] userDelete
+- [ ] userUpdate
+- [ ] userDelete
 
 ### Auth Flow
 - [ ] Login
