@@ -10,6 +10,9 @@ Functional Backend implementation of REST api with NodeJS(Express) MongoDB w/ Pr
 
 </div>
 
+> **Note** 
+> See Front-end project [admin-analytics](https://github.com/biantris/admin-analytics)
+
 ### Tools
 - [x] TypeScript
 - [x] Node
