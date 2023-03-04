@@ -8,7 +8,8 @@
   "scripts": {
     "start": "node dist/app/shared/server.js",
     "dev": "ts-node-dev --inspect --transpile-only src/app/shared/server.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "test": "jest"
   },
   "dependencies": {
     "@prisma/client": "^4.11.0",
@@ -25,15 +26,21 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
+    "@swc/core": "^1.2.165",
+    "@swc/jest": "^0.2.20",
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
     "@types/bcryptjs": "^2.4.2",
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.14",
+    "@types/jest": "^29.4.0",
     "@types/jsonwebtoken": "^8.5.9",
     "@types/node": "^18.11.12",
+    "@types/supertest": "^2.0.12",
     "husky": "^7.0.4",
+    "jest": "^27.5.1",
     "prisma": "^4.7.1",
+    "supertest": "^6.2.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^4.9.4"
   }
