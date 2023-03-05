@@ -24,7 +24,7 @@ Functional Backend implementation of REST api with NodeJS(Express) MongoDB w/ Pr
 - [x] [Supertest](https://github.com/ladjs/supertest)
 - [ ] [Eslint](https://eslint.org/)
 - [ ] [Prettier](https://prettier.io/)
-- [ ] [Fly.io](https://fly.io/) (Deploy)
+- [x] [Fly.io](https://fly.io/) (Deploy)
 
 ### Modules
 
