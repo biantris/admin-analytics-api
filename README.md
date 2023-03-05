@@ -70,4 +70,4 @@ http://localhost:8080/open
 
 ### 🔗 Demo:
 
-[wip]
+🔗 https://admin-analytics-api.fly.dev
