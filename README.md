@@ -21,7 +21,6 @@ Functional Backend implementation of REST api with NodeJS(Express) MongoDB w/ Pr
 - [x] Prisma
 - [x] Jest
 - [x] Supertest
-- [ ] Swagger
 - [ ] Eslint
 - [ ] Prettier
 
