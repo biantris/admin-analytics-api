@@ -10,38 +10,48 @@ Functional Backend implementation of REST api with NodeJS(Express) MongoDB w/ Pr
 
 </div>
 
-> **Note** 
+> **Note**
 > See Front-end project [admin-analytics](https://github.com/biantris/admin-analytics)
 
 ### Tools
-- [x] TypeScript
-- [x] Node
-- [x] ExpressJS
-- [x] MongoDB
-- [x] Prisma
-- [x] Jest
-- [x] Supertest
-- [ ] Eslint
-- [ ] Prettier
-- [ ] Fly.io (Deploy)
+
+- [x] [TypeScript](https://www.typescriptlang.org/)
+- [x] [Node](https://nodejs.org/en/)
+- [x] [ExpressJS](https://expressjs.com/)
+- [x] [MongoDB](https://www.mongodb.com/)
+- [x] [Prisma](https://www.prisma.io/)
+- [x] [Jest](https://jestjs.io/)
+- [x] [Supertest](https://github.com/ladjs/supertest)
+- [ ] [Eslint](https://eslint.org/)
+- [ ] [Prettier](https://prettier.io/)
+- [ ] [Fly.io](https://fly.io/) (Deploy)
 
 ### Modules
-- [x] userModel
+
+- [x] userModedule
 
 #### APIs
-- [ ] userGet
-- [ ] userGetAll
-- [x] userPost
-- [ ] userUpdate
-- [ ] userDelete
+
+##### User
+
+- [x] userCreate (POST)
+
+### Routes
+
+##### User
+
+- `/` userCreate
 
 ### Auth Flow
+
 - [ ] Login
 - [ ] Validate user token
 - [ ] Logout
 
 ### Getting Started
+
 - clone this repo
+
 ```sh
 # install dependencies
 > yarn
@@ -59,4 +69,5 @@ http://localhost:8080/open
 ```
 
 ### 🔗 Demo:
+
 [wip]
