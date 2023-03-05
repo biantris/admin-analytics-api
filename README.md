@@ -55,7 +55,7 @@ Functional Backend implementation of REST api with NodeJS(Express) MongoDB w/ Pr
 > yarn start
 
 # open in
-http://localhost:8080/api/version
+http://localhost:8080/open
 ```
 
 ### 🔗 Demo:
