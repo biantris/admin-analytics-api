@@ -1,9 +1,9 @@
-import express, { Request, Response, NextFunction } from "express";
-import { AppError } from "./errors/AppError";
-import dotenv from "dotenv";
 import cors from "cors";
-import routes from "./routes";
+import dotenv from "dotenv";
+import express, { NextFunction, Request, Response } from "express";
 import "express-async-errors";
+import { AppError } from "./errors/AppError";
+import routes from "./routes";
 
 dotenv.config();
 
@@ -18,6 +18,11 @@ app.use(
     origin: "https://admin-analytics.vercel.app",
   })
 );
+
+app.use("/open", function (req, res) {
+  res.status(200).send("OK");
+});
+
 app.use("/api", routes);
 
 app.use(
