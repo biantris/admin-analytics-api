@@ -1,8 +1,8 @@
 import {
   ICreateUser,
   UserRepository,
-} from "../../../repositories/userRepository";
-import { AppError } from "../../../shared/errors/AppError";
+} from '../../../repositories/userRepository';
+import { AppError } from '../../../shared/errors/AppError';
 
 export class UserCreateUseCase {
   constructor(private userRepository: UserRepository) {}
@@ -12,7 +12,7 @@ export class UserCreateUseCase {
       const userExist = await this.userRepository.findByEmail(email);
 
       if (userExist) {
-        throw new AppError("Email já cadastrado!");
+        throw new AppError('Email já cadastrado!');
       }
 
       const user = await this.userRepository.create({
