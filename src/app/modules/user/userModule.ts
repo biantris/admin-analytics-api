@@ -1,11 +1,11 @@
-import { prismaClient } from "../../../database/prismaClient";
-import { User } from "../../../domain/entities/user";
+import { prismaClient } from '../../../database/prismaClient';
+import { User } from '../../../domain/entities/user';
 import {
   ICreateUser,
   IUpdatePasswordUser,
   UserRepository,
-} from "../../repositories/userRepository";
-import { bcryptjs } from "../../shared/utils/bcryptjs";
+} from '../../repositories/userRepository';
+import { bcryptjs } from '../../shared/utils/bcryptjs';
 
 export class UserModule implements UserRepository {
   async create(data: ICreateUser): Promise<User> {

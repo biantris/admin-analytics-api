@@ -1,6 +1,6 @@
-import { NextFunction, Request, Response } from "express";
-import { ICreateUser } from "../../../repositories/userRepository";
-import { UserCreateUseCase } from "./userCreateUserCase";
+import { NextFunction, Request, Response } from 'express';
+import { ICreateUser } from '../../../repositories/userRepository';
+import { UserCreateUseCase } from './userCreateUserCase';
 
 export class UserCreateController {
   constructor(private createUser: UserCreateUseCase) {}

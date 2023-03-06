@@ -1,6 +1,6 @@
-import { UserModule } from "../userModule";
-import { UserCreateController } from "./userCreateController";
-import { UserCreateUseCase } from "./userCreateUserCase";
+import { UserModule } from '../userModule';
+import { UserCreateController } from './userCreateController';
+import { UserCreateUseCase } from './userCreateUserCase';
 
 export const userCreateFactory = () => {
   const userRepository = new UserModule();

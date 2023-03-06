@@ -1,9 +1,9 @@
-import cors from "cors";
-import dotenv from "dotenv";
-import express, { NextFunction, Request, Response } from "express";
-import "express-async-errors";
-import { AppError } from "./errors/AppError";
-import routes from "./routes";
+import cors from 'cors';
+import dotenv from 'dotenv';
+import express, { NextFunction, Request, Response } from 'express';
+import 'express-async-errors';
+import { AppError } from './errors/AppError';
+import routes from './routes';
 
 dotenv.config();
 
@@ -15,15 +15,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: "https://admin-analytics.vercel.app",
+    origin: 'https://admin-analytics.vercel.app',
   })
 );
 
-app.use("/open", function (req, res) {
-  res.status(200).send("OK");
+app.use('/open', function (req, res) {
+  res.status(200).send('OK');
 });
 
-app.use("/api", routes);
+app.use('/api', routes);
 
 app.use(
   (err: Error, request: Request, response: Response, next: NextFunction) => {
@@ -34,7 +34,7 @@ app.use(
     }
 
     return response.status(500).json({
-      status: "error",
+      status: 'error',
       message: `Internal server error - ${err.message}`,
     });
   }
