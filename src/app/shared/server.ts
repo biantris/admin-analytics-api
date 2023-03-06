@@ -1,3 +1,5 @@
 import { app } from './app';
 
-app.listen(8080, () => console.log(`App is running in ${8080}`));
+app.listen(process.env.PORT, () =>
+  console.log(`App is running on http://localhost:${process.env.PORT}/open`)
+);
