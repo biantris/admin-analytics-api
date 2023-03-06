@@ -37,6 +37,7 @@ Functional Backend implementation of REST api with NodeJS(Express) MongoDB w/ Pr
 - [x] userCreate (POST)
 - [x] userAuthentication (POST)
 - [x] userGetById (GET)
+- [x] userGetByEmail (GET)
 
 ### Routes
 
@@ -47,6 +48,7 @@ Functional Backend implementation of REST api with NodeJS(Express) MongoDB w/ Pr
 - `api/` userCreate
 - `api/auth` userAuthentication
 - `api/:id` userGetById
+- `api/email/:email` userGetByEmail
 
 ### Auth Flow
 
