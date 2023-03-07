@@ -8,7 +8,7 @@ describe('POST /users', () => {
   });
 
   it('should create a user', async () => {
-    const response = await request(app).post('/users').send({
+    const response = await request(app).post('/api/user').send({
       name: 'John Doe',
       email: 'john@gmail.com',
       password: '12345678',
