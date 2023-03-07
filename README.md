@@ -45,10 +45,10 @@ Functional Backend implementation of REST api with NodeJS(Express) MongoDB w/ Pr
 
 ##### User
 
-- `api/` userCreate
-- `api/auth` userAuthentication
-- `api/:id` userGetById
-- `api/email/:email` userGetByEmail
+- `api/user` userCreate
+- `api/user/auth` userAuthentication
+- `api/user/:id` userGetById
+- `api/user/email/:email` userGetByEmail
 
 ### Auth Flow
 
