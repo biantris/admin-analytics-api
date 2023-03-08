@@ -9,18 +9,15 @@ dotenv.config();
 
 const app = express();
 
-// origin: "https://admin-analytics.vercel.app/",
-
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(
-  cors({
-    origin: 'https://admin-analytics.vercel.app',
-  })
-);
 
-app.use('/open', function (req, res) {
-  res.status(200).send('OK');
+app.get('/open', (req, res) => {
+  res.status(200).json({
+    message: 'Welcome to Beatriz Oliveira Globo challenge (づ￣ ³￣)づ',
+    status: 200,
+  });
 });
 
 app.use('/api', routes);
