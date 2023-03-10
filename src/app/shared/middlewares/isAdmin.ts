@@ -1,7 +1,13 @@
 import { NextFunction, Request, Response } from 'express';
+import * as jwt from 'jsonwebtoken';
+import { config } from '../../../config';
+import { prismaClient } from '../../../database/prismaClient';
 import { unbase64 } from '../auth/base64';
 import { AppError } from '../errors/AppError';
-import { bcryptjs } from '../utils/bcryptjs';
+
+type JWTPayload = {
+  user: string;
+};
 
 export const isAdmin = async (
   request: Request,
@@ -9,19 +15,31 @@ export const isAdmin = async (
   next: NextFunction
 ) => {
   try {
-    const { authauthorization: authAdminHeader } = request.headers;
+    const { authorization: authHeader } = request.headers;
 
-    if (!authAdminHeader) throw new Error('Unauthorized');
+    if (!authHeader) throw new Error('Unauthorized');
 
-    const authorization = unbase64(authAdminHeader);
+    const authorization = unbase64(authHeader);
 
-    const isAdmin = await bcryptjs.authenticate({
-      password: authorization,
-      passwordHash:
-        '$2a$08$QizGOrWIh0zH0OMgYslQ7ug4YAI1gKRAJRvdXgJXUjLD2f6hgptdS',
+    const [, token] = authorization.split(' ');
+
+    const { user: id } = jwt.verify(token, config.TOKEN_SECRET, {
+      algorithms: ['HS256'],
+    }) as JWTPayload;
+
+    if (!id) throw new AppError('Unauthorized');
+
+    const user = await prismaClient.user.findFirst({
+      where: {
+        id,
+      },
     });
 
-    if (!isAdmin) throw new AppError('Unauthorized');
+    if (!user) throw new AppError('Unauthorized');
+
+    if (user.access_level !== 'ADMIN') throw new AppError('Unauthorized');
+
+    request.user = { id: user.id };
 
     return next();
   } catch (err) {
