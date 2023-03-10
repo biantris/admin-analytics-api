@@ -1,5 +1,3 @@
-fly.toml
-Dockerfile
-.dockerignore
-node_modules
-.git
+# flyctl launch added from .gitignore
+**\node_modules
+**\.env
