@@ -65,9 +65,6 @@ Functional Backend implementation of REST api with NodeJS(Express) MongoDB w/ Pr
 # or
 > yarn install
 
-# copy .env file
-> cp .env.example .env
-
 # start project
 > yarn start
 
