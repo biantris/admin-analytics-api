@@ -63,6 +63,9 @@ Functional Backend implementation of REST api with NodeJS(Express) MongoDB w/ Pr
 # or
 > yarn install
 
+# build project
+> yarn build
+
 # start project
 > yarn start
 
