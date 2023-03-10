@@ -4,10 +4,6 @@
 
 Functional Backend implementation of REST api with NodeJS(Express) MongoDB w/ Prisma and Jest Tests.
 
-<a href="https://github.com/biantris/restris/actions">
-  <img alt="Tests Passing" src="https://github.com/biantris/restris/actions/workflows/test.yml/badge.svg" />
-</a>
-
 </div>
 
 > **Note**
