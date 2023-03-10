@@ -56,10 +56,6 @@ Functional Backend implementation of REST api with NodeJS(Express) MongoDB w/ Pr
 - [x] Validate user token
 - [x] Logout
 
-### Testing
-
-[wip]
-
 ### Getting Started
 
 - clone this repo
