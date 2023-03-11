@@ -10,7 +10,7 @@ class UserCreateUseCase {
             try {
                 const userExist = await this.userRepository.findByEmail(email);
                 if (userExist) {
-                    throw new AppError_1.AppError("Email já cadastrado!");
+                    throw new AppError_1.AppError('Email já cadastrado!');
                 }
                 const user = await this.userRepository.create({
                     name,

@@ -8,7 +8,7 @@
   "scripts": {
     "start": "node dist/app/shared/server.js",
     "dev": "ts-node-dev --inspect --transpile-only src/app/shared/server.ts",
-    "build": "tsc",
+    "build": "prisma generate && tsc",
     "test": "jest",
     "lint": "eslint .",
     "prettier": "prettier --write .",

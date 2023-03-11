@@ -13,6 +13,18 @@ class UserModule {
             throw err;
         }
     }
+    async findAll() {
+        try {
+            return await prismaClient_1.prismaClient.user.findMany({
+                orderBy: {
+                    createdAt: 'desc',
+                },
+            });
+        }
+        catch (err) {
+            throw err;
+        }
+    }
     async findById(id) {
         try {
             return await prismaClient_1.prismaClient.user.findFirst({
@@ -47,14 +59,6 @@ class UserModule {
                     password: await bcryptjs_1.bcryptjs.encryptPassword(password),
                 },
             });
-        }
-        catch (err) {
-            throw err;
-        }
-    }
-    async findAll() {
-        try {
-            return await prismaClient_1.prismaClient.user.findMany();
         }
         catch (err) {
             throw err;

@@ -7,5 +7,5 @@ const express_1 = require("express");
 //import { isAuthenticated } from "../middlewares/isAuthenticated";
 const userRoutes_1 = __importDefault(require("./userRoutes"));
 const routes = (0, express_1.Router)();
-routes.use("/user", userRoutes_1.default);
+routes.use('/user', userRoutes_1.default);
 exports.default = routes;
