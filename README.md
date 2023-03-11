@@ -76,4 +76,4 @@ http://localhost:8080/open
 
 ## 🔗 Demo:
 
-🔗 https://admin-analytics-api.fly.dev
+🔗 https://admin-analytics-api-2.fly.dev/open
