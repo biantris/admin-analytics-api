@@ -2,7 +2,7 @@
   "name": "admin-analytics-api",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "URL",
+  "repository": "https://github.com/biantris/admin-analytics-api",
   "author": "Beatriz Oliveira <anabeatrizxoliveira@gmail.com>",
   "license": "MIT",
   "scripts": {
