@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/open', (req, res) => {
-  res.status(200).json({
+  return res.status(200).json({
     message: 'Welcome to Beatriz Oliveira Globo challenge (づ￣ ³￣)づ',
     status: 200,
   });
