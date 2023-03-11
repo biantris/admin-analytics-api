@@ -18,12 +18,15 @@ WORKDIR /app
 # to install all modules: "yarn install --production=false"
 # Ref: https://classic.yarnpkg.com/lang/en/docs/cli/install/#toc-yarn-install-production-true-false
 
-ENV NODE_ENV production
+ENV NODE_ENV build
 
 COPY . .
 
 RUN yarn install && yarn run build
+
 FROM debian:bullseye
+
+ENV NODE_ENV production
 
 LABEL fly_launch_runtime="nodejs"
 
