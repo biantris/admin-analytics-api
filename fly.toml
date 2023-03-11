@@ -11,6 +11,11 @@ processes = []
 [experimental]
   auto_rollback = true
 
+[build]
+  builder = "heroku/buildpacks:20"
+  [build.args]
+    PRISMA_SKIP_POSTINSTALL_GENERATE=true
+
 [[services]]
   http_checks = []
   internal_port = 8080
