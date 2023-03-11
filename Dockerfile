@@ -19,6 +19,7 @@ ENV NODE_ENV build
 COPY . .
 
 RUN npm i
+RUN npm generate
 RUN npm run build \
     && npm prune --production
 
