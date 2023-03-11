@@ -19,8 +19,8 @@ export interface IUpdatePasswordUser {
 
 export interface UserRepository {
   create(data: ICreateUser): Promise<User>;
+  findAll(): Promise<User[] | null>;
   findById(id: string): Promise<User | null>;
   findByEmail(email: string): Promise<User | null>;
   updatePassword(data: IUpdatePasswordUser): Promise<User | null>;
-  findAll(): Promise<User[] | null>;
 }
