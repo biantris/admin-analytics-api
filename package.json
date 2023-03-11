@@ -6,7 +6,7 @@
   "author": "Beatriz Oliveira <anabeatrizxoliveira@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node dist/app/shared/server.js",
+    "start": "node dist/src/app/shared/server.js",
     "dev": "ts-node-dev --inspect --transpile-only src/app/shared/server.ts",
     "build": "prisma generate && tsc",
     "test": "jest",

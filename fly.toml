@@ -1,6 +1,6 @@
-# fly.toml file generated for admin-analytics-api on 2023-03-05T18:50:23-03:00
+# fly.toml file generated for admin-analytics-api-2 on 2023-03-11T18:27:22-03:00
 
-app = "admin-analytics-api"
+app = "admin-analytics-api-2"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
@@ -10,11 +10,6 @@ processes = []
 
 [experimental]
   auto_rollback = true
-
-[build]
-  builder = "heroku/buildpacks:20"
-  [build.args]
-    PRISMA_SKIP_POSTINSTALL_GENERATE=true
 
 [[services]]
   http_checks = []
