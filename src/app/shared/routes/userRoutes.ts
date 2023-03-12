@@ -5,10 +5,11 @@ import { userGetAllFactory } from '../../modules/user/user-get-all/userGetAllFac
 import { userGetByEmailFactory } from '../../modules/user/user-get-by-email/userGetByEmailFactory';
 import { userGetByIdFactory } from '../../modules/user/user-get-by-id/userGetByIdFactory';
 import { isAuthenticated } from '../middlewares/isAuthenticated';
+import { limiter } from '../middlewares/rateLimit';
 
 const userRoutes = Router();
 
-userRoutes.post('/', (request, response, next) => {
+userRoutes.post('/', limiter, (request, response, next) => {
   userCreateFactory().handle(request, response, next);
 });
 
