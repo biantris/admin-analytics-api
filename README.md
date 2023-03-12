@@ -6,6 +6,12 @@ Functional Backend implementation of REST api with NodeJS(Express) MongoDB w/ Pr
 
 </div>
 
+<div align="center">
+    <a href="https://github.com/biantris/admin-analytics-api/actions/workflows/fly.yml">
+      <img alt="Fly Deploy" src="https://github.com/biantris/admin-analytics-api/actions/workflows/fly.yml/badge.svg" />
+    </a>
+</div>
+
 <p align="center">🚧 WIP 🚧</p>
 
 > **Note**
