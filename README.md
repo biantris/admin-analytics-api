@@ -64,8 +64,8 @@ Functional Backend implementation of REST api with NodeJS(Express) MongoDB w/ Pr
 
 ### Getting Started
 
-- Clone this repo
-- Create a new `.env` file and copy the contents of `.env.example` into it
+- Clone this repo;
+- Create a new `.env` file and copy the contents of `.env.example` into it.
 
 ```sh
 # install dependencies
