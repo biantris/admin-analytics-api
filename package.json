@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^17.5.1",
-    "@commitlint/config-conventional": "^17.4.4",
+    "@commitlint/config-conventional": "^17.6.0",
     "@swc/core": "^1.2.165",
     "@swc/jest": "^0.2.25",
     "@types/bcryptjs": "^2.4.2",
