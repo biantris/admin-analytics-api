@@ -31,7 +31,7 @@
     "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^17.6.1",
     "@swc/core": "^1.2.165",
-    "@swc/jest": "^0.2.25",
+    "@swc/jest": "^0.2.26",
     "@types/bcryptjs": "^2.4.2",
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.14",
