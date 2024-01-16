@@ -16,7 +16,7 @@
     "studio": "prisma studio"
   },
   "dependencies": {
-    "@prisma/client": "^4.16.2",
+    "@prisma/client": "^5.8.1",
     "axios": "^1.5.1",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
